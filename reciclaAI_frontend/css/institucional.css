@@ -12,6 +12,234 @@
   --inst-shadow:0 24px 70px rgba(24,72,47,.11);
 }
 
+/* =========================================
+   FORMULÁRIO DE CONTATO - RECICLA AI
+   Compatível com o HTML original
+========================================= */
+.formMain {
+  margin-bottom: 30px ;
+}
+
+form[action*="formsubmit.co"] {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+
+    padding: 35px !important;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px !important;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    border: 1px solid #e3ebe3;
+
+    box-shadow: 0 12px 35px rgba(39, 73, 45, 0.10);
+
+    box-sizing: border-box;
+
+    font-family: "Inter", sans-serif;
+}
+
+
+/* =========================================
+   CAMPOS
+========================================= */
+
+form[action*="formsubmit.co"] input[type="text"],
+form[action*="formsubmit.co"] textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    background: transparent;
+
+    color: #26352b;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 15px;
+
+    border: none !important;
+
+    border-bottom: 2px solid #d8e2d8 !important;
+
+    border-radius: 0 !important;
+
+    padding: 12px 4px !important;
+
+    outline: none !important;
+
+    transition:
+        border-color 0.25s ease,
+        padding 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* =========================================
+   E-MAIL
+========================================= */
+
+form[action*="formsubmit.co"] input[type="text"][name="E-mail"] {
+    width: 100%;
+}
+
+
+/* =========================================
+   PLACEHOLDERS
+========================================= */
+
+form[action*="formsubmit.co"] input::placeholder,
+form[action*="formsubmit.co"] textarea::placeholder {
+    color: #8a978d;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+
+    opacity: 1;
+}
+
+
+/* =========================================
+   FOCO NOS CAMPOS
+========================================= */
+
+form[action*="formsubmit.co"] input:focus,
+form[action*="formsubmit.co"] textarea:focus {
+    border-bottom-color: #4f8f57 !important;
+
+    background: rgba(79, 143, 87, 0.025);
+
+    padding-left: 8px !important;
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+form[action*="formsubmit.co"] textarea {
+    min-height: 115px;
+
+    resize: none;
+
+    line-height: 1.6;
+
+    padding-top: 10px !important;
+}
+
+
+/* =========================================
+   ÁREA DO BOTÃO
+========================================= */
+
+form[action*="formsubmit.co"] > div:last-child {
+    margin-top: 5px;
+}
+
+
+/* =========================================
+   BOTÃO ENVIAR
+========================================= */
+
+form[action*="formsubmit.co"] input[type="submit"] {
+    width: 140px !important;
+
+    height: 45px !important;
+
+    border: none !important;
+
+    border-radius: 10px !important;
+
+    background: #17945b !important;
+
+    color: #26352b !important;
+
+    font-family: "Inter", sans-serif;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================
+   HOVER DO BOTÃO
+========================================= */
+
+form[action*="formsubmit.co"] input[type="submit"]:hover {
+    background: #e5bb35 !important;
+
+    color: #26352b !important;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 7px 18px rgba(242, 201, 76, 0.30);
+}
+
+
+/* =========================================
+   CLIQUE
+========================================= */
+
+form[action*="formsubmit.co"] input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   RESPONSIVIDADE
+========================================= */
+
+@media (max-width: 640px) {
+
+    form[action*="formsubmit.co"] {
+        width: 100%;
+
+        padding: 28px 22px !important;
+
+        gap: 21px !important;
+
+        border-radius: 18px;
+    }
+
+    form[action*="formsubmit.co"] input[type="text"],
+    form[action*="formsubmit.co"] textarea {
+        font-size: 14px;
+    }
+
+    form[action*="formsubmit.co"] input[type="submit"] {
+        width: 100% !important;
+
+        height: 48px !important;
+    }
+}
+
+
+/* =========================================
+   TELAS MUITO PEQUENAS
+========================================= */
+
+@media (max-width: 380px) {
+
+    form[action*="formsubmit.co"] {
+        padding: 24px 18px !important;
+    }
+}
+
+
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:92px}
 body.institutional-page{margin:0;background:var(--inst-bg);color:var(--inst-ink);font-family:'Inter',system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;overflow-x:hidden}
